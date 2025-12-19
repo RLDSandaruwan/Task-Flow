@@ -14,7 +14,7 @@ exports.googleAuth = async (req, res) => {
 
     const { token } = req.body;
     
-    if (!token) {
+    if (!token) { 
       return res.status(400).json({ msg: "Token is required" });
     }
 
